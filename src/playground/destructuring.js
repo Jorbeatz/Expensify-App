@@ -37,3 +37,4 @@ console.log(`You are in ${city} ${state}.`)
 const item = ['Coffee (Hot)', '$2.00', '$2.50', '$2.75'];
 const [coffee, , medium, ] = item; 
 console.log(`a medium ${coffee} costs ${medium}`);
+
