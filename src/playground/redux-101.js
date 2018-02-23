@@ -66,4 +66,3 @@ store.dispatch(incrementCount({ incrementBy: 5 }));
 store.dispatch(decrementCount({ decrementBy: 10 }));
 store.dispatch(setCount({ count: 200 }));
 store.dispatch(resetCount());
-
