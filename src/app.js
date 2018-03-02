@@ -20,13 +20,15 @@ store.subscribe(() => {
 
 const expenseOne = store.dispatch(addExpense({ description: 'water bill', amount: 2000, createdAt: 1400 }));
 const expenseTwo = store.dispatch(addExpense({ description: 'gas bill', amount: 3000, createdAt: 1600 }));
-// store.dispatch(setTextFilter('bill'));
+
+store.dispatch(setTextFilter('bill'));
 // store.dispatch(setTextFilter('water'));
+
 console.log(store.getState());
 
-setTimeout(() => {
-	store.dispatch(setTextFilter('rent'));
-}, 3000)
+// setTimeout(() => {
+// 	store.dispatch(setTextFilter('water'));
+// }, 3000)
 
 const jsx = (
 	<Provider store={store}>
