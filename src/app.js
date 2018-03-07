@@ -18,17 +18,11 @@ store.subscribe(() => {
 	console.log(visibleExpenses);
 });
 
-const expenseOne = store.dispatch(addExpense({ description: 'water bill', amount: 2000, createdAt: 1400 }));
-const expenseTwo = store.dispatch(addExpense({ description: 'gas bill', amount: 3000, createdAt: 1600 }));
-
-store.dispatch(setTextFilter('bill'));
-// store.dispatch(setTextFilter('water'));
+store.dispatch(addExpense({ description: 'water bill', amount: 20000, createdAt: 400 }));
+store.dispatch(addExpense({ description: 'gas bill', amount: 300, createdAt: 2000 }));
+store.dispatch(addExpense({ description: 'rent', amount: 30, createdAt: 10000 }));
 
 console.log(store.getState());
-
-// setTimeout(() => {
-// 	store.dispatch(setTextFilter('water'));
-// }, 3000)
 
 const jsx = (
 	<Provider store={store}>
