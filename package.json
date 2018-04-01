@@ -1,14 +1,14 @@
 {
   "name": "Expensify",
   "version": "1.0.0",
-  "description": "A decisive app for indecisive people",
+  "description": "Track your expenses",
   "main": "index.js",
   "author": "Jordy Guntur",
   "license": "MIT",
   "scripts": {
     "build": "webpack --watch",
     "dev-server": "webpack-dev-server",
-    "test": "jest"
+    "test": "jest --config=jest.config.json --watch"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -16,11 +16,15 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "jest": "^22.4.2",
     "live-server": "^1.2.0",
     "moment": "^2.21.0",
     "node-sass": "^4.7.2",
     "normalize.css": "^7.0.0",
+    "raf": "^3.4.0",
     "react": "^16.2.0",
     "react-addons-shallow-compare": "^15.6.2",
     "react-dates": "^16.3.6",
@@ -28,6 +32,7 @@
     "react-modal": "^3.3.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.19.1",
