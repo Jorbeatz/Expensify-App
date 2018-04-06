@@ -1,8 +1,10 @@
 import React from 'react';
 import { DateRangePicker } from 'react-dates';	
 import { connect } from 'react-redux';
+
 import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from '../actions/filters';
 
+// Component 
 class ExpenseListFilters extends React.Component {
 	state = {
 		calendarFocused: null
@@ -55,6 +57,8 @@ class ExpenseListFilters extends React.Component {
 	}
 }
 
+// MapStateToProps has a store state as an argument and is used to link a component with a certain part of the store state 
+// It's basically giving the components the props it needs
 const MapStateToProps = (state) => {
 	return {
 		filters: state.filter
