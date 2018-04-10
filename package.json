@@ -6,7 +6,8 @@
   "author": "Jordy Guntur",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --watch",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json --watch"
   },
