@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseListItem with expense 1`] = `
+exports[`should render ExpenseListItem correctly 1`] = `
 <div>
   <Link
     replace={false}
