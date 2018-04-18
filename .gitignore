@@ -1,8 +1,8 @@
 # Ignore files b/c generated on Heroku servers
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
+public/dist/bundle.js
+public/dist/bundle.js.map
+public/dist/styles.css
+public/dist/styles.css.map
 
 # Logs
 logs
