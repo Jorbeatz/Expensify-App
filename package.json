@@ -6,11 +6,13 @@
   "author": "Jordy Guntur",
   "license": "MIT",
   "scripts": {
+    "start": "node server/server.js",
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json --watch"
+    "test": "jest --config=jest.config.json --watch",
+    "heroku-postbuild": "yarn run build:prod",
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -21,6 +23,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
+    "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "jest": "^22.4.2",
     "live-server": "^1.2.0",
