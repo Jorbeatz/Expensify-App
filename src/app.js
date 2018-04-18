@@ -11,8 +11,9 @@ import getVisibleExpenses from './selectors/expenses';
 
 import 'react-dates/lib/css/_datepicker.css';
 
-import 'normalize.css/normalize.css'
-import './styles/styles.scss';
+// We extracted this out
+// import 'normalize.css/normalize.css'
+// import './styles/styles.scss';
 
 const store = configureStore();
 const state = store.getState();
